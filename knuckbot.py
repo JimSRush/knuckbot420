@@ -83,6 +83,3 @@ def lambda_handler(_event_json, _context):
     print("wrods", words)
     image = get_knuck(words)
     upload_image(image, words)
-
-
-lambda_handler("hellw", "world")
