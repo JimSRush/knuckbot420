@@ -63,8 +63,8 @@ def generateTat():
 
 
 def upload_image(image, status):
-    image.save("tat.jpg")
-    with open("tat.jpg", "rb") as imagefile:
+    image.save("/tmp/tat.jpg")
+    with open("/tmp/tat.jpg", "rb") as imagefile:
         imagedata = imagefile.read()
 
     # - then upload medias one by one on Twitter's dedicated server
